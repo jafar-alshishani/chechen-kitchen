@@ -1,0 +1,229 @@
+@media(max-width:1500px) {
+
+    /* Stack grid item */
+
+    nav .navbar {
+        display: grid;
+        grid-template-columns: 4fr 4fr 1fr;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 0 2rem;
+    }
+
+
+    .social {
+        padding-bottom: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    #gallery {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+
+    }
+}
+
+/*  -------- 1k -------- */
+@media(max-width:1000px) {
+
+    /* Stack grid item */
+
+    nav .navbar {
+        display: grid;
+        grid-template-columns: 4fr 4fr 1fr;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 0 2rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    #gallery {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+
+    }
+
+    #contact-info {
+        background-color: var(--background-light);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+    }
+
+    form {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:900px) {
+
+    /* Stack grid item */
+    .logo {
+        /* width: 600px; */
+        height: 100px;
+        justify-self: center;
+    }
+
+    nav .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 5px;
+        justify-content: space-between;
+    }
+
+
+    #staff .staff-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 0 2rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar .links {
+        display: flex;
+        justify-self: center;
+        margin-top: 10px;
+        /* display: inline-block; */
+    }
+
+    .social {
+        justify-self: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #contact .google-map iframe {
+        width: 100%;
+        justify-self: center;
+        text-align: center;
+        outline: 1px red solid;
+    }
+
+}
+
+
+@media(max-width:710px) {
+
+    /* Stack grid item */
+    .logo {
+        /* width: 600px; */
+        height: 100px;
+        justify-self: center;
+    }
+
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #staff .staff-icons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media(max-width:580px) {
+
+
+    #gallery {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+
+    }
+}
+
+@media(max-width:490px) {
+    .container {
+        width: 90%;
+        padding: 0.0rem 0.5rem;
+    }
+
+    #gallery {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+
+    }
+
+    #showcase .showcase-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    nav .navbar logo {
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    nav .navbar .logo-image {
+        width: 100%;
+    }
+}
+
+
+@media(max-width:380px) {
+    .container {
+        width: 100%;
+        padding: 0.0rem 0.1rem;
+    }
+
+    nav .navbar .logo-image {
+        width: 100%;
+
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+}

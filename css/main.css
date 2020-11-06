@@ -1,0 +1,407 @@
+:root {
+    --standardText: #303030;
+    --highlighText: #B7752A;
+    --icons: #ffa900;
+    --background-light: #f8f7f3;
+    --headings: #683d4a;
+    --hover-effects: #B39EA4;
+    --rare-used-icon: #DB2873;
+}
+
+@font-face {
+    font-family: 'sukar';
+    src: url('/font/Sukar-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  
+
+NORMALTEXT = #303030
+icons = ##ffa900
+background-light : #f8f7f3
+headings ;#683d4a
+used in hover effects: # B39EA4
+rare used icon color: #DB2873
+*/
+
+body {
+
+    font-family: sukar;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.0rem 1rem;
+}
+
+.logo-image {
+    /* width: 600px; */
+    height: 100px;
+
+}
+
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    /* grid-template-rows: 4fr 4fr 1fr; */
+    z-index: 2;
+    /* grid-area: span;
+    */
+    /* justify-content: left; */
+    /* padding: 1rem; */
+    /* height: 100px; */
+    background-color: #f5f5f5;
+    /* outline: red 1px solid; */
+    /* overflow: hidden; */
+
+    /* height: 200px; */
+}
+
+nav .navbar {
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;
+    justify-self: left;
+    margin-top: 30px;
+    /* display: inline-block; */
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0 2.5rem;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+}
+
+.social {
+    justify-self: end;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.social i {
+    color: var(--headings);
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    padding-left: 5px;
+}
+
+.social i:hover {
+    color: var(--icons);
+}
+
+.navbar .links a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+.navbar .links a:hover {
+
+    color: var(--icons);
+    text-decoration: none;
+    border-bottom: #ffa900 1px solid;
+}
+
+header img {
+    width: 100%;
+}
+
+#showcase {
+    margin-top: 10px;
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+
+}
+
+#showcase::before {
+    content: '';
+    background: url('/images/Gallery/showcase.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 222; */
+    opacity: .4;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+
+}
+
+#showcase .showcase-content p {
+    margin-bottom: 2rem;
+}
+
+#showcase .showcase-content a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--icons);
+}
+
+#showcase .showcase-content a:hover {
+    color: var(--headings);
+    transition: all 0.8s;
+}
+
+
+/* ------- Staff Section ------- */
+#staff {
+    margin-bottom: 50px;
+}
+
+#staff h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    color: var(--headings);
+
+}
+
+#staff .staff-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+#staff figure {
+    padding: 2rem;
+    background-color: var(--background-light);
+    border: #e6e0c7 solid 1px;
+}
+
+#staff figure img {
+    width: 100%;
+    height: 300px;
+
+}
+
+#staff figure h2 {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--highlighText);
+}
+
+#centerline {
+    margin-top: 50px;
+}
+
+#centerline h2 {
+
+    padding: 50px;
+    text-align: center;
+
+    color: var(--headings);
+}
+
+#gallery {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+
+}
+
+#gallery figure {
+    width: 100%;
+
+
+}
+
+#gallery figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#gallery figure a {
+    transition: all .5s;
+
+}
+
+#gallery figure a:hover {
+    opacity: 0.5;
+
+}
+
+/* News Section */
+.news-headline {
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+    color: var(--headings);
+}
+
+.news article {
+    background-color: var(--background-light);
+    border: #d1c3c7 1px solid;
+    padding: 1rem;
+
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.news .card {
+    width: 100%;
+    /* text-align: center; */
+
+}
+
+.news .card h3 {
+    color: var(--highlighText);
+}
+
+.news .card p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: var(--headings);
+    font-family: Helvetica, sans-serif;
+
+}
+
+.news .card img {
+    width: 100%;
+}
+
+.news .card img:hover {
+    opacity: 0.7;
+}
+
+.news .card span {
+    color: var(--highlighText);
+}
+
+.news .card a {
+    text-decoration: none;
+}
+
+/*  ------- Contact Section------- */
+#contact {
+    padding-bottom: 50px;
+    border-bottom: #d1c3c7 1px solid;
+}
+
+#contact h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--headings);
+}
+
+#contact-info {
+    background-color: var(--background-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+/*  ----- form examinations ----- */
+.wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.form-row>label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+
+.form-row>input {
+    flex: 3;
+}
+
+.form-row>input,
+.form-row>button {
+    padding: .5em;
+}
+
+.form-row textarea {
+    float: 1;
+    padding: .5em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-row>button {
+    background: gray;
+    color: white;
+    border: 0;
+    width: 100%;
+
+}
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    background-color: var(--standardText);
+
+}
+
+footer p {
+    padding-top: 10px;
+    color: var(--hover-effects);
+    text-align: center;
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+footer h3 {
+    color: var(--headings);
+    justify-self: center;
+    text-align: center;
+}
+
+/*  ------- For Media Queries ------- */
