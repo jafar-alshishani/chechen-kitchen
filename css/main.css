@@ -68,8 +68,8 @@ nav {
 }
 
 nav .navbar {
-    display: grid;
-    grid-template-columns: 4fr 3fr 1fr;
+    display: flex;
+    /* grid-template-columns: 4fr 3fr 1fr; */
     margin-bottom: 10px;
     justify-content: space-between;
 }
@@ -93,7 +93,7 @@ nav .navbar {
 .social {
     justify-self: end;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .social i {
